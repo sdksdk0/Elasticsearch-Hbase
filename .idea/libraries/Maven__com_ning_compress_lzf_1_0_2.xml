@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.ning:compress-lzf:1.0.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven/Maven_repository/com/ning/compress-lzf/1.0.2/compress-lzf-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Maven/Maven_repository/com/ning/compress-lzf/1.0.2/compress-lzf-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven/Maven_repository/com/ning/compress-lzf/1.0.2/compress-lzf-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
