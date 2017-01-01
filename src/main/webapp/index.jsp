@@ -21,15 +21,23 @@
 </head>
 
 <body>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<center>
 <form action="search.do" method="get">
   <input type="text" name="keyWords" />
-  <input type="submit" value="千度一下">
+  <input type="submit" value="百度一下">
   <input type="hidden" value="1" name="pageNum">
 </form>
 <c:if test="${! empty page.list }">
-<h3>千度为您找到相关结果约${total}个</h3>
+<h3>百度为您找到相关结果约${total}个</h3>
 <c:forEach items="${page.list}" var="bean">
-  <a href="/detailDocById/${bean.id}.do">${bean.title}</a>
+  <a href="/es/detailDocById/${bean.id}.do">${bean.title}</a>
   <br/>
   <br/>
   <span>${bean.describe}</span>
@@ -48,6 +56,6 @@
   <a href="search.do?pageNum=${page.nextPageNum }&keyWords=${kw}"> 下一页</a>
 </c:if>
 </c:if>
-
+</center>
 </body>
 </html>

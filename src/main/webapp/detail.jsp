@@ -10,7 +10,8 @@
 <head>
   <base href="<%=basePath%>">
 
-  <title>My JSP 'index.jsp' starting page</title>
+  <title>百度搜索</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+<center>
 <h1>${Doc.title}</h1>
 <div>
   ${Doc.author}
@@ -32,5 +34,6 @@
 <div>
   ${Doc.content}
 </div>
+</center>
 </body>
 </html>

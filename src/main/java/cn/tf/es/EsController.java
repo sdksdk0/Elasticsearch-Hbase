@@ -72,9 +72,13 @@ public class EsController {
 	 */
 	@RequestMapping("/detailDocById/{id}.do")
 	public String detailArticleById(@PathVariable(value="id") String id, Model modelMap) throws IOException {
-		//这里用的查询是直接从hbase中查询一条字符串出来做拆分封装，这里要求同学们用protobuffer
-		Doc Doc = hbaseUtils.get(hbaseUtils.TABLE_NAME, id);
-		modelMap.addAttribute("Doc",Doc);
+		//这里用的查询是直接从hbase中查询一条字符串出来做拆分封装，这里要求protobuffer
+		Doc doc = hbaseUtils.get(hbaseUtils.TABLE_NAME, id);
+		doc.setAuthor(new String(doc.getAuthor().getBytes("gbk"),"UTF-8"));
+		doc.setTitle(new String(doc.getTitle().getBytes("gbk"),"UTF-8"));
+		doc.setContent(new String(doc.getContent().getBytes("gbk"),"UTF-8"));
+		doc.setDescribe(new String(doc.getDescribe().getBytes("gbk"),"UTF-8"));
+		modelMap.addAttribute("Doc",doc);
 		return "/detail.jsp";
 	}
 	
