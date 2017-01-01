@@ -113,7 +113,7 @@ public class Esutil {
 	}
 
 //	public static void main(String[] args) {
-//		Map<String, Object> search = Esutil.search("hbase", "bjsxt", "doc", 0, 10);
+//		Map<String, Object> search = Esutil.search("hbase", "tfjt", "doc", 0, 10);
 //		List<Map<String, Object>> list = (List<Map<String, Object>>) search.get("dataList");
 //	}
 }

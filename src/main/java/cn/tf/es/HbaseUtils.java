@@ -199,7 +199,7 @@ public class HbaseUtils {
 	@Before
 	public void setup() throws IOException {
 		Configuration config = HBaseConfiguration.create();
-		config.set("hbase.zookeeper.quorum","master,slave1,slave2");
+		config.set("hbase.zookeeper.quorum","node1,node2,node3");
 		conn = ConnectionFactory.createConnection(config);
 	}
 
